@@ -1,8 +1,10 @@
 
-# import time
+import time
+
 op = 'y'
 while(op.upper()=='Y'):
     a = input("\nNum:")
+    start_time = time.time()
     i = 0
     while(int(a) % 10 !=int(a)):
         ans = 1
@@ -12,7 +14,9 @@ while(op.upper()=='Y'):
         a = ans
         print(ans, end="\n")
     print("Multiplicative Persistence = ",i, end='\n')
+    print(time.time()-start_time);
     op = input("Continue?(Y/N)")
+
 # start_time=time.time()
 # num=0
 # i = 0
